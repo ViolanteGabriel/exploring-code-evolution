@@ -81,11 +81,21 @@ Seja criativo!
 
 Responda às questões abaixo diretamente neste arquivo `README.md` do seu fork:
 
-1. Repositório selecionado: https://github.com/donnemartin/system-design-primer.git
-2. Gráfico selecionado: Linhas de código Python (LOC), do [relatório GitEvo](report_system-design-primer.html).
+1. Repositório selecionado: https://github.com/pallets/flask — framework web em Python.
+2. Gráfico selecionado: Linhas de código Python (LOC), do [relatório GitEvo](report_flask.html), com [dados em CSV](report_flask.csv).
 
    ![Evolução das linhas de código Python entre 2021 e 2026](images/evolucao-loc.svg)
 
-3. Explicação: Nas amostras anuais de 2021 a 2026, o código Python permaneceu com 1.088 linhas. A curva indica estabilidade no tamanho, mas não comprova ausência de alterações nem qualidade do código. Mudanças na documentação não aparecem nessa métrica.
+3. Explicação: O Flask cresceu de **15.859 linhas em 2021 para 18.138 em 2023** (+14,4%). Em 2024, caiu para **17.466 linhas** (−3,7%), voltando a crescer até **17.957 em 2026**. Portanto, a evolução alterna expansão e redução do código.
+
+   A queda entre as amostras de 2023 e 2024 é compatível com a remoção de código obsoleto e a reorganização das classes Flask e Blueprint, registradas no [histórico da versão 3.0](https://flask.palletsprojects.com/en/stable/changes/#version-3-0-0), lançada em setembro de 2023. Essas mudanças ajudam a manutenção, mas o gráfico sozinho não permite atribuir toda a redução a elas nem medir a qualidade do sistema.
+
+   Cada ponto representa o primeiro commit encontrado pelo GitEvo naquele ano. A contagem inclui todos os arquivos Python analisados, inclusive testes, comentários e linhas em branco; não representa apenas código de produção.
+
+Relatório gerado com GitEvo 0.1.3:
+
+```shell
+gitevo -r python -f 2021 -t 2026 https://github.com/pallets/flask
+```
 
 
