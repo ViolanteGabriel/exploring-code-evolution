@@ -81,9 +81,11 @@ Seja criativo!
 
 Responda às questões abaixo diretamente neste arquivo `README.md` do seu fork:
 
-1. Repositório selecionado: <URL_DO_REPOSITORIO_SELECIONADO_AQUI>
-2. Gráfico selecionado: <IMAGEM_DO_GRAFICO_SELECIONADO_AQUI>
-3. Explicação: <EXPLICACAO_AQUI>
+1. Repositório selecionado: https://github.com/donnemartin/system-design-primer.git
+2. Gráfico selecionado: Linhas de código Python (LOC), do [relatório GitEvo](report_system-design-primer.html).
 
+   ![Evolução das linhas de código Python entre 2021 e 2026](images/evolucao-loc.svg)
+
+3. Explicação: Nas amostras anuais de 2021 a 2026, o código Python permaneceu com 1.088 linhas. A curva indica estabilidade no tamanho, mas não comprova ausência de alterações nem qualidade do código. Mudanças na documentação não aparecem nessa métrica.
 
 
